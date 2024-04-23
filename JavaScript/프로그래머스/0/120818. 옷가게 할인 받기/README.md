@@ -1,6 +1,6 @@
 # [level 0] 옷가게 할인 받기 - 120818 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120818#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120818) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 02월 29일 03:20:01
+2024년 04월 23일 13:51:32
 
 ### 문제 설명
 
