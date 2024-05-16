@@ -1,6 +1,6 @@
 # [level 0] 나이 출력 - 120820 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120820?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120820) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 04월 23일 13:04:40
+2024년 06월 05일 20:11:43
 
 ### 문제 설명
 

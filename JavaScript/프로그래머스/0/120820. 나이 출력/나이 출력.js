@@ -1,4 +1,4 @@
 function solution(age) {
-    const year = 2022;
-    return year - age + 1;
+    const YEAR = 2022;
+    return YEAR - age + 1;
 }
