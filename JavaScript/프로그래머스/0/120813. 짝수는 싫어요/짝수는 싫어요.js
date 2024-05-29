@@ -1,7 +1,7 @@
 function solution(n) {
-    var answer = [];
+    const array = [];
     for (let i = 1; i <= n; i += 2) {
-        answer.push(i);
+        array.push(i);
     }
-    return answer;
+    return array;
 }
