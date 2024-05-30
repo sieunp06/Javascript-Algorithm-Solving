@@ -1,7 +1,8 @@
 function solution(n) {
-    const pizza_piece = 7;
-    if (n % pizza_piece == 0) {
-        return n / pizza_piece;
-    }
-    return Math.floor(n / pizza_piece) + 1;
+    const PIZZA = 7;
+    
+    if (n % PIZZA == 0) {
+        return Math.floor(n / PIZZA);
+    } 
+    return Math.floor(n / PIZZA) + 1;
 }
