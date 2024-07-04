@@ -1,11 +1,14 @@
-function solution(seoul) {
-    var answer = 0;
-    
-    for (let i = 0; i < seoul.length; i++) {
-        if (seoul[i] === 'Kim') {
-            answer = i;
-            break;
-        }
+const solution = (seoul) => {
+    const name = 'Kim';
+    return makeResult(seoul.indexOf(name));
+}
+
+const makeResult = (index) => {
+    return `김서방은 ${index}에 있다`;
+}
+
+const validateType = (target, type) => {
+    if (typeof target !== type) {
+        throw new TypeError('wrong error');
     }
-    return "김서방은 " + answer + "에 있다";
 }
