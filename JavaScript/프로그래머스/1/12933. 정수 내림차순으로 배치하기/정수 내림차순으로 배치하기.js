@@ -1,4 +1,3 @@
 function solution(n) {
-    var answer = String(n).split("").sort((a, b) => b - a);
-    return parseInt(answer.join(""));
+    return parseInt(String(n).split('').sort((a, b) => b - a).join(''));
 }
