@@ -1,9 +1,10 @@
-function solution(n) {
-    var answer = 0;
+const solution = (n) => {
+    return makeNumList(String(n)).reduce((pre, cur) => pre + cur, 0);
+}
 
-    for (const num of String(n)) {
-        answer += parseInt(num);
+const makeNumList = (numText) => {
+    if (typeof numText !== 'string') {
+        throw new TypeError('wrong type');
     }
-
-    return answer;
+    return numText.split('').map(alpha => parseInt(alpha));
 }
