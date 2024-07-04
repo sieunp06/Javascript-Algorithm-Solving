@@ -1,14 +1,14 @@
-function solution(x) {
-    if (x % sum(x) === 0) {
-        return true;
-    }
-    return false;
+const solution = (x) => {
+    return x % calculateSum(x) === 0 ? true : false;
 }
 
-function sum(x) {
-    var sum = 0;
-    for (const num of String(x).split("")) {
-        sum += parseInt(num);
+const calculateSum = (num) => {
+    validateType(num, 'number');
+    return String(num).split('').map(each => parseInt(each)).reduce((pre, cur) => pre + cur);
+}
+
+const validateType = (target, type) => {
+    if (typeof target !== type) {
+        throw new TypeError('wrong error');
     }
-    return sum;
 }
