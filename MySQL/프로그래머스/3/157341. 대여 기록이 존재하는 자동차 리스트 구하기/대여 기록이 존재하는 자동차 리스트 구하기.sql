@@ -1,0 +1,13 @@
+-- 코드를 입력하세요
+# SELECT CAR_ID, CAR_TYPE
+# FROM CAR_RENTAL_COMPANY_CAR
+# WHERE CAR_TYPE = '세단';
+
+SELECT C1.CAR_ID
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY C1 JOIN (SELECT CAR_ID
+                                               FROM CAR_RENTAL_COMPANY_CAR
+                                               WHERE CAR_TYPE = '세단') C2
+    ON C1.CAR_ID = C2.CAR_ID
+WHERE START_DATE LIKE '2022-10%'
+GROUP BY CAR_ID
+ORDER BY CAR_ID DESC;
